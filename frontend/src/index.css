@@ -7,3 +7,56 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa;
+}
+
+/* Estilos responsivos generales */
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.btn {
+  @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.btn-primary {
+  @apply btn bg-orange-600 text-white hover:bg-orange-700 focus:ring-orange-500;
+}
+
+.btn-secondary {
+  @apply btn bg-gray-600 text-white hover:bg-gray-700 focus:ring-gray-500;
+}
+
+.btn-success {
+  @apply btn bg-green-600 text-white hover:bg-green-700 focus:ring-green-500;
+}
+
+.btn-danger {
+  @apply btn bg-red-600 text-white hover:bg-red-700 focus:ring-red-500;
+}
+
+.card {
+  @apply bg-white shadow rounded-lg overflow-hidden;
+}
+
+.form-input {
+  @apply block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500;
+}
+
+.alert {
+  @apply p-4 rounded-md;
+}
+
+.alert-success {
+  @apply alert bg-green-50 text-green-800;
+}
+
+.alert-error {
+  @apply alert bg-red-50 text-red-800;
+}
+
+.alert-info {
+  @apply alert bg-blue-50 text-blue-800;
+}
